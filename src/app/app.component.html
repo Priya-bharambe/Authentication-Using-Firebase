@@ -19,12 +19,14 @@
 
                     <!-- <button type="submit" class="registerbtn">Register</button> -->
                     <button (click)="onSignup(emailSignup.value,passwordSignup.value)" class="registerbtn">Sign Up</button>
-                </div>
 
-                <div class="container signin">
-                    <p style="color: black;">Already have an account? <a href="#">Sign in</a>.</p>
+
+                    <div class="container signin">
+                        <p style="color: black;">Already have an account? <a href="#">Sign in</a>.</p>
+                    </div>
                 </div>
             </form>
+
 
             <app-home *ngIf="isSignedIn" (islogout)="handlelogout()"></app-home>
 
